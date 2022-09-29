@@ -16,5 +16,10 @@ namespace Biblioteca.Frontend
         {
             InitializeComponent();
         }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -59,5 +59,15 @@ namespace Biblioteca.Frontend.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bitmap {
+            get {
+                object obj = ResourceManager.GetObject("bitmap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

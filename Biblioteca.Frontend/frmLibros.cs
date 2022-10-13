@@ -178,5 +178,14 @@ namespace Biblioteca.Frontend
             }
 
         }
+
+        private void dgvLibros_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCódigo.Text = dgvLibros.CurrentRow.Cells[0].Value.ToString();
+            txtTitulo.Text = dgvLibros.CurrentRow.Cells[1].Value.ToString();
+            txtAutor.Text = dgvLibros.CurrentRow.Cells[2].Value.ToString();
+            txtEditorial.Text = dgvLibros.CurrentRow.Cells[3].Value.ToString();
+            txtAño.Text = dgvLibros.CurrentRow.Cells[4].Value.ToString();
+        }
     }
 }

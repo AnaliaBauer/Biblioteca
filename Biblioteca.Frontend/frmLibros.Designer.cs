@@ -137,10 +137,13 @@
             this.dgvLibros.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvLibros.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgvLibros.Location = new System.Drawing.Point(39, 99);
+            this.dgvLibros.MultiSelect = false;
             this.dgvLibros.Name = "dgvLibros";
             this.dgvLibros.RowTemplate.Height = 28;
+            this.dgvLibros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLibros.Size = new System.Drawing.Size(789, 585);
             this.dgvLibros.TabIndex = 11;
+            this.dgvLibros.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLibros_CellDoubleClick);
             // 
             // lblAño
             // 
@@ -188,7 +191,7 @@
             this.lblLista.AutoSize = true;
             this.lblLista.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblLista.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLista.Location = new System.Drawing.Point(39, 64);
+            this.lblLista.Location = new System.Drawing.Point(39, 52);
             this.lblLista.Name = "lblLista";
             this.lblLista.Size = new System.Drawing.Size(170, 32);
             this.lblLista.TabIndex = 26;

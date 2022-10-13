@@ -175,5 +175,13 @@ namespace Biblioteca.Frontend
                 e.Handled = true;
             }
         }
+
+        private void dgvClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtDNI.Text = dgvClientes.CurrentRow.Cells[0].Value.ToString();
+            txtNombre.Text = dgvClientes.CurrentRow.Cells[1].Value.ToString();
+            txtApellido.Text = dgvClientes.CurrentRow.Cells[2].Value.ToString();
+            txtTelefono.Text = dgvClientes.CurrentRow.Cells[3].Value.ToString();
+        }
     }
 }

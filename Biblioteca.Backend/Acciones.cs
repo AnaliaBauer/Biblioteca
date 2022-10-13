@@ -88,7 +88,7 @@ namespace Biblioteca.Backend
             if (fila != -1)
             {
                 DTLibros.Rows[fila].Delete();
-                DTLibros.WriteXml("Clientes.xml");
+                DTLibros.WriteXml("Libros.xml");
                 resultado = true;
             }
 
